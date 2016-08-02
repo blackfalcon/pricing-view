@@ -64,6 +64,14 @@ body {
   background: #fff;
 }
 
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+}
+
 @keyframes vex-fadein {
   0% {
     opacity: 0;
@@ -737,13 +745,70 @@ span.hs-image-caption {
   width: 1px;
 }
 
+[class*="heading"] {
+  margin-bottom: 0.5em;
+}
+
+.c-heading-1 {
+  font-size: 50px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.c-subheading-1 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
 .button {
   border: 0;
+  padding: 0;
+  margin: 0;
+  line-height: 2.65;
+  display: inline-block;
+  text-align: center;
   border-radius: 4px;
-  color: white;
-  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  color: #fff;
   background-color: #F2778A;
+  min-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    min-width: 260px;
+  }
+}
+
+.button--cta {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+  background-color: #FFC442;
+  line-height: 3.75;
+  font-size: 1.05em;
+}
+
+.m-hero {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  min-height: 484px;
+}
+
+.m-hero__pricing {
+  background: #7F7E9E;
+  background-image: linear-gradient(-180deg, rgba(242, 119, 137, 0) 1%, rgba(255, 255, 255, 0.5) 99%);
+}
+
+.m-hero__pricing .button--cta {
+  margin-top: 2.5em;
 }
 
 /*# sourceMappingURL=styles.css.map */
