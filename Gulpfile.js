@@ -19,8 +19,7 @@ gulp.task('build:css', function() {
         .pipe(sourcemaps.init())
         .pipe(sass({
         errLogToConsole: true,
-        outputStyle: 'expanded', //alt options: nested, compact, compressed
-        includePaths: require('node-bourbon').includePaths
+        outputStyle: 'expanded' //alt options: nested, compact, compressed
     }))
         .pipe(gulpautoprefixer({
         browsers: ['last 4 versions'],

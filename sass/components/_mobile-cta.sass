@@ -1,0 +1,39 @@
+.Homepage--mobile-cta
+  display: none
+  width: 100%
+  font-size: 16.6px
+  color: #FFFFFF
+  background: #FFC442
+  text-align: center
+  border: 1px solid rgba(0,0,0,.15)
+  border-width: 1px 0
+  text-decoration: none
+  padding: 21px 0 16px
+
+.Homepage--mobile-cta:active,
+.Homepage--mobile-cta:hover,
+.Homepage--mobile-cta:visited
+    color: #FFFFFF
+    text-decoration: none
+
+.Homepage--mobile-cta:active,
+.Homepage--mobile-cta:hover
+    background: #FEBE30
+
+@media (max-width: 767px)
+  .Homepage--mobile-cta
+    display: block
+
+.Homepage-Header .item,
+.Homepage-Header .social,
+.Homepage-Header .spacer,
+.Homepage-Header .logo,
+.Homepage-Header .burger,
+.Homepage-Header .signup
+  border-width: 0
+
+.Homepage-Footer .Footer--col.large form .hs_email.field.hs-form-field input
+  width: calc(100% - 7px) !important
+
+  @media screen and (max-width: 1200px)
+    width: 100% !important

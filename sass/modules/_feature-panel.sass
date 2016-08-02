@@ -1,0 +1,28 @@
+.m-feature-panel
+  display: flex
+  flex-direction: column
+  padding: 2rem
+  text-align: center
+
+  @media screen and (min-width: $tablet)
+    padding: 4rem
+
+  &__content-group
+    margin-bottom: 2rem
+
+    &:last-of-type
+      margin-bottom: 0
+
+    > [class*="c-heading"]
+      margin-bottom: 1.5em
+
+    @media screen and (min-width: $desktop)
+      margin-top: 0
+      margin-right: auto
+      margin-left: auto
+
+      &:last-of-type
+        margin-bottom: 0
+
+  &:nth-of-type(even)
+    background-color: rgba(#7F7E9E, .05)

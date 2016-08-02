@@ -1,0 +1,34 @@
+.c-align-list
+
+  &__line-item
+    display: table
+    margin-left: auto
+    width: 100%
+    margin-bottom: 2em
+
+    @media screen and (min-width: $tablet)
+      margin-bottom: 1em
+
+  &__string
+    color: #989898
+    width: 40%
+    text-align: left
+    display: table-cell
+    vertical-align: top
+
+    @media screen and (min-width: $mobile-plus)
+      width: 45%
+
+    @media screen and (min-width: $mobile) and (orientation: landscape)
+      text-align: right
+      width: 75%
+      vertical-align: middle
+
+    @media screen and (min-width: $tablet)
+      text-align: right
+      width: 70%
+      vertical-align: middle
+
+    @media screen and (min-width: $desktop)
+      width: 73%
+      width: 440px

@@ -1,11 +1,38 @@
 [class*="heading"]
   margin-bottom: 0.5em
 
-.c-heading-1
-  font-size: 50px
-  line-height: 1
-  font-weight: 600
+.c-heading
+  &-1
+    font-size: 40px
+    line-height: 1
+    font-weight: 600
 
-.c-subheading-1
-  font-size: 24px
-  font-weight: 300
+  &-2
+    font-size: 28px
+    color: #7F7E9E
+    line-height: 1
+    font-weight: 300
+    line-height: 1.2em
+
+    @media screen and (min-width: $tablet)
+      font-size: 42px
+
+  &-4
+    font-size: 30px
+    color: #7F7E9E
+    font-weight: 300
+
+  &-5
+    font-size: 26px
+    color: #7F7E9E
+    font-weight: 300
+
+.c-subheading
+  &-1
+    font-size: 20px
+    font-weight: 300
+    line-height: 1.5em
+
+  &-5
+    font-size: 18px
+    font-weight: 300

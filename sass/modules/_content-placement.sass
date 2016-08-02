@@ -1,0 +1,62 @@
+.m-content-placement
+  display: flex
+  flex-direction: column
+
+  @media screen and (min-width: $tablet) and (orientation: landscape)
+    flex-direction: row
+
+  @media screen and (min-width: $desktop)
+    flex-direction: row
+    justify-content: space-around
+    width: 1176px
+    margin: 0 auto
+
+  &__item
+    margin-bottom: 2rem
+
+    @media screen and (min-width: $tablet)
+      text-align: left
+      display: flex
+
+      .m-content-placement__content
+        flex-basis: 600px
+
+        &:first-of-type
+          margin-right: 2rem
+          flex-basis: 52px
+
+          @media screen and (min-width: $tablet) and (orientation: landscape)
+            margin: 0
+
+    @media screen and (min-width: $tablet) and (orientation: landscape)
+      display: block
+      text-align: center
+      flex-basis: 29%
+      margin: 0 auto
+
+    @media screen and (min-width: $desktop)
+      text-align: center
+
+      .m-content-placement__content
+        flex-basis: auto
+
+        &:first-of-type
+          margin: 0
+          flex-basis: auto
+
+    &:last-of-type
+      margin-bottom: 0
+
+    [class*="c-subheading"]
+      color: #48BA7D
+      margin-bottom: 1.5rem
+
+    .c-paragraph-1
+      color: #989898
+      line-height: 1.5rem
+
+  .context-svg-icon
+    width: 52px
+    margin-bottom: 2rem
+
+

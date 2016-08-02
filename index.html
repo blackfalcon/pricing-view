@@ -11,14 +11,242 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     </head>
     <body>
-        <!-- <a class="button">button</a> -->
 
-        <section class="m-hero m-hero__pricing">
-            <div class="m-hero--heading-group">
+        <style>
+            .Homepage-Header {background-color: #7F7E9E;}
+        </style>
+
+        <svg style="display: none;">
+          <symbol id="minus-icon" viewBox="-1 -1 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Group-31-Copy-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <rect id="Combined-Shape" fill="#989898" transform="translate(10.000000, 10.000000) rotate(0) translate(-10.000000, -10.000000) " x="4.97168511" y="9.37146064" width="10.0566298" height="1.25707872"></rect>
+                  <ellipse id="Oval-280" stroke="#989898" cx="10" cy="10" rx="10" ry="10"></ellipse>
+              </g>
+          </symbol>
+
+          <symbol id="addition-icon" viewBox="119 -1 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Group-31-Copy-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(120.000000, 0.000000)">
+                  <path d="M10,9.11111111 L6.88888889,6 L6,6.88888889 L9.11111111,10 L6,13.1111111 L6.88888889,14 L10,10.8888889 L13.1111111,14 L14,13.1111111 L10.8888889,10 L14,6.88888889 L13.1111111,6 L10,9.11111111 Z" id="Combined-Shape" fill="#989898" transform="translate(10.000000, 10.000000) rotate(45.000000) translate(-10.000000, -10.000000) "></path>
+                  <ellipse id="Oval-280" stroke="#989898" cx="10" cy="10" rx="10" ry="10"></ellipse>
+              </g>
+          </symbol>
+        </svg>
+
+        <section class="m-hero m-hero--pricing">
+            <div class="m-hero__content-group">
                 <h1 class="c-heading-1">Koding is FREE for up to 30 days.</h1>
                 <p class="c-subheading-1">After your free trial, Koding will more than pay for itself.</p>
                 <a class="button button--cta">GET STARTED FOR FREE</a>
             </div>
         </section>
+
+        <section class="m-feature-panel">
+            <div class="m-feature-panel__content-group">
+                <h2 class="c-heading-2">How much will Koding.com cost and save my company?</h2>
+                <div class="m-feature">
+                    <div class="m-feature__content--secondary">
+                        <p class="c-paragraph-2">Number of current developers:</p>
+                        <form class="c-slider">
+                            <input type="range" name="slider" min="0" max="100">
+                            <output for="slider" onforminput="value = slider.valueAsNumber;"></output>
+                        </form>
+                        <p class="c-caption">Do you have a bigger team?</p>
+                        <p class="c-caption">
+                          <a class="c-link">Click here to contact us</a>
+                        </p>
+                    </div>
+                    <div class="m-feature__content--primary">
+                        <div class="c-price" itemprop="offers" itemtype="http://schema.org/Offer">
+                            <p class="c-heading-4">Total Cost:</p>
+                            <meta itemprop="priceCurrency" content="USD">
+                            <span itemprop="price">$1,998.50</span>
+                            <span>/ month</span>
+                            <link itemprop="availability" href="http://schema.org/InStock">
+                        </div>
+                        <p class="c-caption">( <strong>$39.97</strong> per developer )</p>
+                        <a class="button">GET STARTED FOR FREE</a>
+                        <p class="c-caption">Scroll down to see <strong>your estimated savings</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-feature-panel__content-group">
+                <div class="m-feature">
+                    <div class="m-feature__content--secondary">
+                        <ul class="c-align-list">
+                            <li class="c-align-list__line-item">
+                                <p class="c-align-list__string">Number of developers</p>
+                                <div class="c-increment">
+                                    <a class="c-increment__button">
+                                        <svg>
+                                          <use xlink:href="#minus-icon"></use>
+                                        </svg>
+                                    </a>
+                                    <input type="text" class="f-value" value="1000">
+                                    <a class="c-increment__button">
+                                        <svg>
+                                          <use xlink:href="#addition-icon"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="c-align-list__line-item">
+                                <p class="c-align-list__string">Onboarding time of a new hire (hours)</p>
+                                <div class="c-increment">
+                                    <a class="c-increment__button">
+                                        <svg>
+                                          <use xlink:href="#minus-icon"></use>
+                                        </svg>
+                                    </a>
+                                    <input type="text" class="f-value" value="80">
+                                    <a class="c-increment__button">
+                                        <svg>
+                                          <use xlink:href="#addition-icon"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="c-align-list__line-item">
+                                <p class="c-align-list__string">Hours spent by current team for each new hire </p>
+                                <div class="c-increment">
+                                    <a class="c-increment__button">
+                                        <svg>
+                                          <use xlink:href="#minus-icon"></use>
+                                        </svg>
+                                    </a>
+                                    <input type="text" class="f-value" value="30">
+                                    <a class="c-increment__button">
+                                        <svg>
+                                          <use xlink:href="#addition-icon"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="c-align-list__line-item">
+                                <p class="c-align-list__string">Projected new developer hires for the coming year</p>
+                                <div class="c-increment">
+                                    <a class="c-increment__button">
+                                        <svg>
+                                          <use xlink:href="#minus-icon"></use>
+                                        </svg>
+                                    </a>
+                                    <input type="text" class="f-value" value="250">
+                                    <a class="c-increment__button">
+                                        <svg>
+                                          <use xlink:href="#addition-icon"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="c-align-list__line-item">
+                                <p class="c-align-list__string">Sysadmins on staff supporting the dev environtment</p>
+                                <div class="c-increment">
+                                    <a class="c-increment__button">
+                                        <svg>
+                                          <use xlink:href="#minus-icon"></use>
+                                        </svg>
+                                    </a>
+                                    <input type="text" class="f-value" value="15">
+                                    <a class="c-increment__button">
+                                        <svg>
+                                          <use xlink:href="#addition-icon"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="c-align-list__line-item">
+                                <p class="c-align-list__string">Hours spent on dev environment related problems per developer per week</p>
+                                <div class="c-increment">
+                                    <a class="c-increment__button">
+                                        <svg>
+                                          <use xlink:href="#minus-icon"></use>
+                                        </svg>
+                                    </a>
+                                    <input type="text" class="f-value" value="4">
+                                    <a class="c-increment__button">
+                                        <svg>
+                                          <use xlink:href="#addition-icon"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="c-align-list__line-item">
+                                <p class="c-align-list__string">Avg. hourly rate at the company ($)</p>
+                                <div class="c-increment">
+                                    <a class="c-increment__button">
+                                        <svg>
+                                          <use xlink:href="#minus-icon"></use>
+                                        </svg>
+                                    </a>
+                                    <input type="text" class="f-value" value="$50">
+                                    <a class="c-increment__button">
+                                        <svg>
+                                          <use xlink:href="#addition-icon"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="m-feature__content--primary">
+                        <div class="c-price" itemprop="offers" itemtype="http://schema.org/Offer">
+                            <p class="c-heading-4">Total Savings:</p>
+                            <meta itemprop="priceCurrency" content="USD">
+                            <span itemprop="price" class="f-value">$180,000</span>
+                            <link itemprop="availability" href="http://schema.org/InStock">
+                        </div>
+                        <p class="c-caption">per year</p>
+                        <hr/>
+                        <p class="c-paragraph-0">Dev Environment Savings: <span class="f-value">$130,000</span></p>
+                        <p class="c-paragraph-0">Onboarding Savings: <span class="f-value">$25,000</span></p>
+                        <p class="c-paragraph-0">Sys Admin Savings: <span class="f-value">$25,000</span></p>
+                        <a class="button">GET STARTED FOR FREE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="m-feature-panel m-feature-panel__content-group">
+            <h2 class="c-heading-2">Here is how Koding can save you thousands of dollars:</h2>
+            <div class="m-content-placement">
+                <div class="m-content-placement__item">
+                    <div class="m-content-placement__content">
+                        <img class="context-svg-icon" src="//cdn2.hubspot.net/hubfs/1593820/homepage_ufo/img/icon_spheres.svg?t=1470092548057" alt="icon_spheres.svg">
+                    </div>
+                    <div class="m-content-placement__content">
+                        <p class="c-heading-5">Reduce developer down time</p>
+                        <p class="c-subheading-5">Save $300-800 per dev, per day</p>
+                        <p class="c-paragraph-1">Coordinating local development environments across your teams is costly and time consuming.</p>
+                        <p class="c-paragraph-1">Koding.com makes sure that all your developers are working in an identical environment, reducing bugs and downtime.</p>
+                    </div>
+                </div>
+                <div class="m-content-placement__item">
+                    <div class="m-content-placement__content">
+                        <img class="context-svg-icon" src="//cdn2.hubspot.net/hubfs/1593820/homepage_ufo/img/icon_stacks.svg?t=1470092548057" alt="icon_stacks.svg">
+                    </div>
+                    <div class="m-content-placement__content">
+                        <p class="c-heading-5">Reduce onboarding costs</p>
+                        <p class="c-subheading-5">You can save $1-5k per hire</p>
+                        <p class="c-paragraph-1">Onboarding new developers into your dev environment is not only frustrating, but time consuming, taking hours or even days before they can begin their work..</p>
+                        <p class="c-paragraph-1">Koding saves you time and money with instant cloud development environments which can be shared and started by new developers within minutes.</p>
+                    </div>
+                </div>
+                <div class="m-content-placement__item">
+                    <div class="m-content-placement__content">
+                        <img class="context-svg-icon" src="//cdn2.hubspot.net/hubfs/1593820/homepage_ufo/img/icon_code.svg?t=1470092548057" alt="icon_code.svg">
+                    </div>
+                    <div class="m-content-placement__content">
+                        <p class="c-heading-5">Let dev ops do dev ops.</p>
+                        <p class="c-subheading-5">Save $40-100k a year</p>
+                        <p class="c-paragraph-1">Koding eliminates the need for your devops people to constantly coordinate your team’s local development environments and focus instead on sandbox and production environments where they are most effective.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="scripts/slider.js"></script>
     </body>
 </html>
+
+

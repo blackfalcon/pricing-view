@@ -1,4 +1,4 @@
-$buttons: (primary-color: #F2778A, primary-text: #fff, primary-radius: 4px, desktop-width: 260px)
+$buttons: (primary-color: #F2778A, primary-text: #fff, primary-radius: 6px, desktop-width: 260px)
 
 .button
   border: 0
@@ -10,7 +10,7 @@ $buttons: (primary-color: #F2778A, primary-text: #fff, primary-radius: 4px, desk
   border-radius: map-get($buttons, primary-radius)
   color: map-get($buttons, primary-text)
   background-color: map-get($buttons, primary-color)
-  min-width: 100%
+  min-width: 80%
 
   @media screen and (min-width: $tablet)
     min-width: map-get($buttons, desktop-width);
@@ -20,4 +20,4 @@ $buttons: (primary-color: #F2778A, primary-text: #fff, primary-radius: 4px, desk
     font-weight: bold
     background-color: #FFC442
     line-height: 3.75
-    font-size: 1.05em
+    font-size: 1em

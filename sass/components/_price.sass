@@ -1,0 +1,21 @@
+.c-price
+  font-size: 22px
+  color: #989898
+  margin-bottom: 0.3em
+
+  + .c-caption
+    strong
+      color: black
+
+  [itemprop="price"]
+    color: black
+    font-size: 30px
+    font-weight: bold
+
+  ~ .button
+    width: 0
+    margin: 1.5em auto
+
+    @media screen and (min-width: $tablet)
+      margin: 1.5em auto
+      min-width: 250px !important

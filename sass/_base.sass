@@ -1,5 +1,6 @@
 html
   box-sizing: border-box
+  -webkit-text-size-adjust: 100%
 
 *
   &,
@@ -8,10 +9,11 @@ html
     box-sizing: inherit
 
 body
-  font-family: "Proxima Nova", Helvetica, Arial, sans-serif
+  font-family: "Proxima-Nova", Helvetica, Arial, sans-serif
   line-height: 1
   color: #000
   background: #fff
+  margin: -1px 0 0
 
 button,
 input,
@@ -19,3 +21,23 @@ optgroup,
 select,
 textarea
   font: inherit
+
+input,
+button,
+textarea
+  -webkit-appearance: none
+  -webkit-border-radius: 0
+  border-radius: 0
+
+strong
+  font-weight: bold
+
+hr
+  border: 0
+  border-top: 1px solid #DADAE7
+  width: 100%
+  margin: 2em 0
+
+ul
+  margin: 0;
+  padding: 0;
