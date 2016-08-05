@@ -6,9 +6,11 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link rel="stylesheet" type="text/css" href="http://seiyria.com/bootstrap-slider/dependencies/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script src="https://use.typekit.net/vpk6jpj.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
     </head>
     <body>
 
@@ -47,8 +49,7 @@
                     <div class="m-feature__content--secondary">
                         <p class="c-paragraph-2">Number of current developers:</p>
                         <form class="c-slider">
-                            <input type="range" name="slider" min="0" max="100">
-                            <output for="slider" onforminput="value = slider.valueAsNumber;"></output>
+                            <input id="ex8" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
                         </form>
                         <p class="c-caption">Do you have a bigger team?</p>
                         <p class="c-caption">
@@ -245,7 +246,8 @@
         </section>
 
         <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-        <script type="text/javascript" src="scripts/slider.js"></script>
+        <script src="scripts/bootstrap-slider.js"></script>
+        <script src="scripts/slider.js"></script>
     </body>
 </html>
 

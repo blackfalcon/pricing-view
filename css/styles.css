@@ -225,101 +225,151 @@ ul {
   font-weight: bold;
 }
 
-.c-slider {
-  position: relative;
-  text-align: left;
-  left: -25px;
-  margin: 2.5em auto 2em;
-}
-
-@media screen and (min-width: 1280px) {
-  .c-slider {
-    left: -20px;
-  }
-}
-
-.c-slider input {
-  position: relative;
-  left: 25px;
-}
-
-@media screen and (min-width: 1280px) {
-  .c-slider input {
-    left: 20px;
-  }
-}
-
-.c-slider output {
-  position: absolute;
-  background-color: #515151;
-  width: 60px;
-  height: 36px;
-  font-size: 20px;
-  text-align: center;
-  color: white;
-  border-radius: 5px;
+/*!
+ * Slider for Bootstrap
+ *
+ * Copyright 2012 Stefan Petre
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ */
+.slider {
   display: inline-block;
-  font-weight: bold;
-  line-height: 1.8;
-  bottom: 130%;
+  vertical-align: middle;
+  position: relative;
 }
 
-.c-slider output:after {
-  content: "";
-  position: absolute;
+.slider.slider-horizontal {
+  width: 210px;
+  height: 20px;
+}
+
+.slider.slider-horizontal .slider-track {
+  height: 10px;
+  width: 100%;
+  margin-top: -16px;
+  top: 50%;
+  left: 0;
+}
+
+.slider.slider-horizontal .slider-selection {
+  height: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+.slider.slider-horizontal .slider-handle {
+  margin-left: -10px;
+  margin-top: -5px;
+}
+
+.slider.slider-horizontal .slider-handle.triangle {
+  border-width: 0 10px 10px 10px;
   width: 0;
   height: 0;
-  border-top: 10px solid #515151;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  top: 100%;
-  left: 50%;
+  border-bottom-color: #0480be;
+  margin-top: 0;
+}
+
+.slider.slider-vertical {
+  height: 210px;
+  width: 20px;
+}
+
+.slider.slider-vertical .slider-track {
+  width: 10px;
+  height: 100%;
   margin-left: -5px;
-  margin-top: -1px;
+  left: 50%;
+  top: 0;
 }
 
-input[type=range] {
-  -webkit-appearance: none;
-  margin: 10px 0;
-}
-
-input[type=range]:focus {
-  outline: none;
-}
-
-input[type=range]::-webkit-slider-runnable-track {
+.slider.slider-vertical .slider-selection {
   width: 100%;
-  height: 12px;
-  cursor: pointer;
-  background: #A8CEFF;
-  border-radius: 10px;
+  left: 0;
+  top: 0;
+  bottom: 0;
 }
 
-input[type=range]::-moz-range-track {
-  width: 100%;
-  height: 12px;
-  cursor: pointer;
-  background: #A8CEFF;
-  border-radius: 10px;
+.slider.slider-vertical .slider-handle {
+  margin-left: -5px;
+  margin-top: -10px;
 }
 
-input[type=range]::-webkit-slider-thumb {
-  height: 24px;
-  width: 24px;
-  border-radius: 50%;
-  background: #67A2EE;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -8px;
+.slider.slider-vertical .slider-handle.triangle {
+  border-width: 10px 0 10px 10px;
+  width: 1px;
+  height: 1px;
+  border-left-color: #0480be;
+  margin-left: 0;
 }
 
-input[type=range]::-moz-range-thumb {
-  height: 24px;
-  width: 24px;
-  border: none;
-  border-radius: 50%;
-  background: #67A2EE;
+.slider input {
+  display: none;
+}
+
+.slider .tooltip-inner {
+  white-space: nowrap;
+  width: 60px;
+  height: 30px;
+  font-size: 18px;
+}
+
+.slider-track {
+  position: absolute;
   cursor: pointer;
+  background-color: #fff;
+  background-repeat: repeat-x;
+  border-radius: 4px;
+}
+
+.slider-selection {
+  position: absolute;
+  background-color: #A8CEFF;
+  background-repeat: repeat-x;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.slider-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #67A2EE;
+  background-repeat: repeat-x;
+  border: 0px solid transparent;
+}
+
+.slider-handle.round {
+  border-radius: 20px;
+}
+
+.slider-handle.triangle {
+  background: transparent none;
+}
+
+.tooltip.top {
+  opacity: 1 !important;
+}
+
+[class="slider slider-horizontal"] {
+  width: 250px !important;
+}
+
+@media screen and (min-width: 768px) {
+  [class="slider slider-horizontal"] {
+    width: 400px !important;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  [class="slider slider-horizontal"] {
+    width: 600px !important;
+  }
+}
+
+.c-slider {
+  margin: 2.5em auto 1em;
 }
 
 .c-increment {
@@ -503,6 +553,7 @@ input[type=range]::-moz-range-thumb {
 @media screen and (min-width: 1280px) {
   .m-feature {
     width: 1176px;
+    margin: 0 auto;
   }
 }
 
