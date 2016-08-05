@@ -430,6 +430,10 @@ ul {
   border: 1px solid #DFDFE1;
   border-radius: 4px;
   margin: 0 8px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 @media screen and (min-width: 375px) {

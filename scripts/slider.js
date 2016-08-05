@@ -1645,3 +1645,13 @@ function _typeof(obj) {
 $("#ex8").slider({
   tooltip: 'always'
 });
+
+
+
+$("#ex8").on("change", function() {
+   var sliderSelect = ($(this).val());
+   var costPerDeveloper = ($("#costPerDeveloper").text());
+   var totalCost = sliderSelect * costPerDeveloper;
+
+   $("#monthlyCost").html('$' + Number(totalCost).toLocaleString('en')); //ugh, not supported in webkit!
+});
